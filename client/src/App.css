@@ -1,0 +1,62 @@
+/* client/src/App.css */
+
+html * {
+  font-family: monospace, Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: linear-gradient(
+    20deg,
+    hsl(240deg 19% 43%) 0%,
+    hsl(273deg 22% 48%) 12%,
+    hsl(307deg 27% 52%) 24%,
+    hsl(329deg 51% 60%) 36%,
+    hsl(344deg 83% 68%) 48%,
+    hsl(358deg 100% 73%) 60%,
+    hsl(16deg 100% 69%) 71%,
+    hsl(32deg 100% 64%) 82%,
+    hsl(45deg 100% 57%) 92%,
+    hsl(55deg 100% 50%) 100%
+  );
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+.btn {
+  padding: 14px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+  opacity: 0.8;
+}
+.btn-outline {
+  color: rgb(24, 24, 24);
+  border: 1px solid rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+}
+.btn-primary {
+  background: rgb(153, 217, 234);
+  color: rgb(0, 24, 111);
+}
+.btn-secondary {
+  background: rgb(52, 15, 132);
+  color: #fff;
+}
