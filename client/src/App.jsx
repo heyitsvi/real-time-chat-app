@@ -4,7 +4,7 @@ import Home from "./pages/home";
 import Chat from "./pages/chat";
 import { useState } from "react";
 import io from "socket.io-client";
-const socket = io.connect("https://real-time-chat-rmgf.onrender.com:4000");
+const socket = io.connect("https://real-time-chat-rmgf.onrender.com");
 
 function App() {
   const [username, setUsername] = useState("");

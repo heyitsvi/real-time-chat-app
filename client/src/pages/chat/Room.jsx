@@ -9,7 +9,6 @@ const Room = ({ socket, username, room }) => {
 
   useEffect(() => {
     socket.on("chatroom_users", (data) => {
-      console.log(data);
       setRoomUsers(data);
     });
 
