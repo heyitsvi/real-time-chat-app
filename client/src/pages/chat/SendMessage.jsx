@@ -7,8 +7,7 @@ const SendMessage = ({ socket, username, room }) => {
   const sendMessage = () => {
     if (message !== "") {
       const __createdtime__ = new Date().toLocaleString();
-      // Send message to server. We can't specify who we send the message to from the frontend. We can only send to server. Server can then send message to rest of users in room
-      console.log("here");
+      // Send message to server.
       socket.emit("send_message", { username, room, message, __createdtime__ });
       setMessage("");
     }
